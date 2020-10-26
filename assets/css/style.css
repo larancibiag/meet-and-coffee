@@ -1,182 +1,221 @@
-* {
-    color: white;
+
+/* INDEX */
+/* Body */
+
+body {
+    text-align: center;
+    color: #000F08;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+  
+body * {
     margin: 0;
     border: 0;
     padding: 0;
-    font-weight: 300;  
-    text-decoration: none;
-    box-sizing: border-box;  
-  }
-  
-  /* COLORES DE FONDO*/
-  body {
-    background-color: #000000;
-    text-align: center;
-    font-family: "Raleway", sawns-serif;  
-  }
-  
-  #caracteristicas {
-    background-color: #1e1a13;
-  }
+}
 
-  /* TEXTO */
-  h1 {
-    color: #ffffff;
-  }
+/* Menu */
 
-  h2 {
-    color: #ffffff;
-  }
-
-  h3 {
-    color: #ffffff;
-  }
-  
-  /* CABECERA */
-  
-  #cabecera {
-    width: 100%;
-    height: 73px;
-    padding: 7px;
-  }
-  
-  #cabecera h1 {
-    font-weight: 500;
-    font-size: 50px;
-    vertical-align: middle;
-  }
-  
-  /* HERO IMG*/
-  
-  #hero-img {
-    width: 100%;
-    height: 727px;
-    background-image: url(../img/bg-header.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
-  }
-  
-  /* DESCRIPCION */
-  
-  #desc-section {
-    height: 348px;
-    padding: 45px 150px 66px 150px;
-    background-color: #000000;
-  }
-  
-  .desc {
-    white-space: nowrap;
-    height: 237px;
-    width: 100%;
-  }
-  
-  .desc-text {
-    font-size: 16px;
+nav {
     text-align: left;
-    width: 528px;
-    height: 197px;
-    white-space: normal;
-    padding-right: 50px;
-  }
-  .desc-foto {
-    padding-left: 50px;
-    width: 453px;
-    height: 237px;
-  }
+    padding: 1.25rem 4rem;
+    position: fixed;
+    width: 100vw;
+}
   
-  .desc-text, .desc-foto {
-    box-sizing: border-box;
+nav ul {
+    list-style-type: none;
+}
+  
+nav ul li {
     display: inline-block;
+    margin: 0 1em;
     vertical-align: middle;
-  }
+}
   
-  /* CARACTERÍSTICAS */
+.icono {
+    width: 2rem;
+}
+
+.oscuro {
+    background: #000F08;
+    color: #ffffff;
+}
   
-  #caracteristicas {
-    width: 100%;
-    height: 348px;
-    padding: 75px 270px;
-    background-color: #1e1a13;
-  }
+.oscuro a{
+    color: #ffffff;
+    text-decoration: none;
+}
   
-  #caracteristicas h2 {
-    font-weight: 500;
-    font-size: 40px;
-  }
-  
-  #caracteristicas h3 {
-    font-size: 24px;
-  }
-  
-  #caracteristicas div {
-    display: inline-block;
-  }
-  
-  #icon {
-    font-size: 54px;
-  }
-  
-  .icons-section {
-    width: 740px;
-    position: relative;
-    top: 57px;
-    background-color: #1e1a13;
-  }
-  
-  .tercer-ojo {
-    position: relative;
-    left: -164px;
-  }
-  
-  .cambian-de-color {
-    position: relative;
-    left: 164px;
-  }
-  
-  /* IMÁGENES */
-  
-  #imagenes {
-    width: 100%;
-    height: 348px;
-    padding: 73px 150px;
-  }
-  
-  .fotos {
-    vertical-align: middle;
-  }
-  
-  .fotos div {
-    width: 316px;
-    height: 202px;
+.icono svg {
+    fill: #ffffff;
+}
+
+/* Header */
+
+.hero-section {
+    text-align: right;
+    background-image: url('../img/bg-hero.png');
+    background-repeat: no-repeat;
     background-size: cover;
+    color: #ffffff;
+    text-shadow: 0.125em 0.25em 0.125em #707070;
+    padding: 6.25rem 3.125rem;
+}
+
+/* Textos */
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 65px;
+    margin-bottom: 0.25em;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+  
+h3 {
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+  
+h4 {
+    font-size: 1.75em;
+}
+  
+h5 {
+    font-size: 1.25em;
+}
+  
+.subtitulo, h4, h5 {
+    font-weight: 400;
+}
+
+/* Ubicacion */
+
+#ubicacion h2 {
+    margin: 1em auto;
+}
+
+/* Secciones */
+
+section {
+    margin-top: 4.5rem;
+}
+
+/* Proxima charla */
+
+.sweet-brown {
+    text-align: left;
+    background: #a4452c;
+    color: #ffffff;
+    padding: 3.125rem;
+    white-space: nowrap;
+}
+
+.sweet-brown h3, .sweet-brown h5 {
+    margin-bottom: 0.5em;
+}
+  
+.centrado {
+    width: 75%;
+    margin: 0 auto;
+}
+  
+.charla-speaker, .charla-texto, .evento {
     display: inline-block;
-    background-repeat: repeat;
-    background-position: center;
-  }
+}
   
-  #foto1 {
-    background-image: url(../img/iguana-2.jpg);
-    position: relative;
-    left: -16px;
-  }
+.charla-speaker{
+    width: 25%;
+    vertical-align: middle;
+}
   
-  #foto2 {
-    background-image: url(../img/iguana-3.jpg);
-  }
+.charla-texto  {
+    width: 72.5%;
+    vertical-align: middle;
+    margin-left: 2.5%;
+    white-space: normal;
+}
+
+/* Eventos */
+
+.evento {
+    width: 30%;
+}
   
-  #foto3 {
-    background-image: url(../img/iguana-4.jpg);
-    position: relative;
-    left: 16px;
-  }
+.evento img {
+    width: 75%;
+}
+
+#eventos h2 {
+    margin-bottom: 1em;
+}
   
-  /* FOOTER */
+#eventos h3 {
+    margin: 1em auto;
+}
+
+/* Footer */
+
+footer {
+    padding: 3.125rem;
+    margin-top: 4.5rem;
+}
+
+footer i {
+    margin: 0 0.25em 0.5em 0.25em;
+}
   
-  #footer {
-    width: 100%;
-    height: 102px;
-    font-size: 20px;
-    padding: 40px 0px;
-    background-color: #1e1a13;
-  }
+/* EVENTOS */
+/* Simposio VeganDB */
+
+div {
+    padding-bottom: 80px;
+}
+
+.content{
+    color: #000F08;
+    margin: 0 auto;
+    max-width: 1085px;
+    width: 80%;
+}
+ 
+.content img{
+    height: 565px;
+    padding-bottom: 50px;
+}
+
+.content h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 150px 490px 50px 0;
+    font-size: 45px;
+    color: #000F08;
+}
+
+.content h3{
+    text-align:left;
+    padding: 30px 0 30px 90px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    color: #000F08;
+    justify-content: left;
+}
+  
+.content p{
+    margin: 20px 0 20px 0;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    padding: 0 100px 0 90px;
+    text-align: left;
+    color: #000F08;
+}
